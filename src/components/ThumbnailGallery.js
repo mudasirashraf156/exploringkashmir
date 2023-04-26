@@ -4,23 +4,24 @@ import axios from 'axios'
 import { css, jsx } from '@emotion/core'
 import ActiveThumbnailWindow from './ActiveThumbnailWindow'
 import ThumbnailGrid from './ThumbnailGrid'
-import image1 from "./EXPLORING KASHMIR/k.jpg"
+
 const ThumbnailGallery = () => {
  
   const [activeIndex, setActiveIndex] = useState(0)
   const [thumbnails, setThumbnails] = useState([
     {
-      imgUrl: {image1},
-      title: "orealis",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     imgUrl: require('./expkashmir/Gulmarg.jpg').default,
+      title: "Gulmarg",
+      bodyText: "Gulmarg literally means “Meadow of flowers.--Gulmarg is the crowning glory of Jammu & Kashmir and is located 2,650 meters above sea level. Known as the “Meadow of Flowers”,"
     },
     {
-      imgUrl: "https://images.unsplash.com/photo-1505689151358-52c00af435e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1929&q=80",
-      title: "Vast Canyon",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        imgUrl: require('./expkashmir/phalgam.jpg').default,
+      title: "Pahalgam",
+      bodyText: "Pahalgam is famous for its scenic beauty and is the jewel of the picturesque Liddar valley in the high Himalayas.(Kashmir, where heaven touches the earth.)"
     },
   
   ]);
+  
  
 
   const renderThumbnails = () =>
