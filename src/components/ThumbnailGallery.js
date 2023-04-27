@@ -22,7 +22,6 @@ const ThumbnailGallery = () => {
   
   ]);
   
- 
 
   const renderThumbnails = () =>
     thumbnails.length ? (
