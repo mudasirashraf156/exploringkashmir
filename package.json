@@ -1,4 +1,6 @@
+
 {
+
   "name": "react-hacker",
   "version": "3.0.0",
   "description": "A simple React starter that's perfect for messing around. Comes with Babel, Emotion CSS in JS, ESlint, and Prettier.",
@@ -10,7 +12,7 @@
     "build": "webpack --config webpack.config.js",
     "postinstall": "npm run build"
   },
-  "author": "Daniel Zuzevich",
+  "author": "mudasir",
   "license": "MIT",
   "dependencies": {
     "@babel/compat-data": "^7.21.4",
